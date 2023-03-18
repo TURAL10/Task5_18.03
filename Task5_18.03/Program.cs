@@ -269,7 +269,7 @@ namespace Task5_18._03
             //    count = 0;
             //    qaliq = i % 10;
             //    number1 = i / 10;
-            //    if(qaliq % 2 == 1)
+            //    if (qaliq % 2 == 1)
             //    {
             //        while (number1 > 0 && number1 % 2 == 1)
             //        {
@@ -291,7 +291,7 @@ namespace Task5_18._03
             //            newNumber = newNumber * 10 + qaliq2;
             //            temp /= 10;
             //        }
-            //        if (newNumber == i) 
+            //        if (newNumber == i)
             //        {
             //            Console.WriteLine(i);
             //        }
@@ -347,69 +347,69 @@ namespace Task5_18._03
 
             #region Task 15
 
-            //int number1, number2, count1, count2;
-            //int sum, num_qaliq;
-            //for (int i = 3; i < 10000; i++)
-            //{
-            //    count1 = 0;
-            //    num_qaliq = 0;
+            int number1, number2, count1, count2;
+            int sum, num_qaliq;
+            for (int i = 3; i < 10000; i++)
+            {
+                count1 = 0;
+                num_qaliq = 0;
 
-            //    number1 = i;
+                number1 = i;
 
-            //    while (number1 > 0)
-            //    {
-            //        num_qaliq = number1 % 10;
-            //        if (num_qaliq % 2 == 1)
-            //        {
-            //            if (number1 % 10 != 3)
-            //            {
-            //                break;
-            //            }
-            //        }
-            //        if (number1 % 10 == 0)
-            //        {
-            //            break;
-            //        }
-            //        number1 /= 10;
+                while (number1 > 0)
+                {
+                    num_qaliq = number1 % 10;
+                    if (num_qaliq % 2 == 1)
+                    {
+                        if (number1 % 10 != 3)
+                        {
+                            break;
+                        }
+                    }
+                    if (number1 % 10 == 0)
+                    {
+                        break;
+                    }
+                    number1 /= 10;
 
-            //        if (number1 == 0)
-            //        {
-            //            for (int j = 2; j < i; j++)
-            //            {
-            //                if (i % j == 0)
-            //                {
-            //                    count1 = 1;
-            //                }
-            //            }
-            //        }
-            //    }
+                    if (number1 == 0)
+                    {
+                        for (int j = 2; j < i; j++)
+                        {
+                            if (i % j == 0)
+                            {
+                                count1 = 1;
+                            }
+                        }
+                    }
+                }
 
-            //    number2 = i;
-            //    sum = 0;
+                number2 = i;
+                sum = 0;
 
-            //    while (number2 > 0)
-            //    {
-            //        sum += number2 % 10;
-            //        number2 /= 10;
-            //    }
+                while (number2 > 0)
+                {
+                    sum += number2 % 10;
+                    number2 /= 10;
+                }
 
-            //    count2 = 0;
-            //    while (sum > 0)
-            //    {
-            //        if (sum % 10 == 2)
-            //        {
-            //            count2 = 2;
-            //        }
+                count2 = 0;
+                while (sum > 0)
+                {
+                    if (sum % 10 == 2)
+                    {
+                        count2 = 2;
+                    }
 
-            //        sum /= 10;
-            //    }
+                    sum /= 10;
+                }
 
-            //    if (number1 == 0 && count1 == 0 && count2 == 0)
-            //    {
-            //        Console.WriteLine(i);
-            //    }
+                if (number1 == 0 && count1 == 0 && count2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
 
-            //}
+            }
 
             #endregion
         }
